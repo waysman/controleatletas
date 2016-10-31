@@ -573,6 +573,11 @@ public class CadastroBoxeador extends javax.swing.JFrame {
         });
 
         jComboBoxSexo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Masculino", "Feminino" }));
+        jComboBoxSexo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxSexoActionPerformed(evt);
+            }
+        });
 
         jTextFieldDataNascimento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -679,6 +684,12 @@ public class CadastroBoxeador extends javax.swing.JFrame {
 
         jLabelLogradouro.setText("Logradouro:");
 
+        jTextFieldLogradouro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldLogradouroActionPerformed(evt);
+            }
+        });
+
         jLabelNumero.setText("Número:");
 
         jLabelBairro.setText("Bairro:");
@@ -703,13 +714,13 @@ public class CadastroBoxeador extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabelComplemento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabelPais, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addComponent(jLabelCidade, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addComponent(jLabelBairro, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addComponent(jLabelNumero, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addComponent(jLabelCep, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addComponent(jLabelEstado, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addComponent(jLabelLogradouro, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE))
+                    .addComponent(jLabelPais, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelCidade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelBairro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelNumero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelCep, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelEstado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabelLogradouro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextFieldCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -909,7 +920,7 @@ public class CadastroBoxeador extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButtonRemoverPremiacao))
                             .addComponent(jScrollPane2))))
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Ficha Técnica", jPanel3);
@@ -994,7 +1005,7 @@ public class CadastroBoxeador extends javax.swing.JFrame {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE))
+                        .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             );
 
@@ -1136,6 +1147,14 @@ private void jTableListaBoxeadoresMouseClicked(java.awt.event.MouseEvent evt) {/
 private void jTextFieldDataNascimentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldDataNascimentoActionPerformed
 // TODO add your handling code here:
 }//GEN-LAST:event_jTextFieldDataNascimentoActionPerformed
+
+    private void jComboBoxSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxSexoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxSexoActionPerformed
+
+    private void jTextFieldLogradouroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldLogradouroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldLogradouroActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAdicionarPremiacao;

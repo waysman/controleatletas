@@ -176,4 +176,7 @@ public class Boxeador extends Atleta {
             return "Pesado";
         }
     }
+
+
+
 }
